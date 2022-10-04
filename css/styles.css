@@ -12,7 +12,7 @@ ul{list-style-type: none;
     list-style-type: none;
     font-family: 'Oswald', sans-serif;}
 
-a{color: black;}
+.link_nav{color: black;}
 
 .portada{height: 100vh;
   background-image: url(../assets/portada.jpeg);
@@ -26,13 +26,14 @@ a{color: black;}
     
 
 .title{text-align: center;
-  font-family: 'Bungee Spice', cursive}
+  font-family: 'Bungee Spice', cursive;
+  }
 
 .slogan{text-align: center;
     font-family: 'Acme', sans-serif;
     font-size: 24px;}
 
-nav{background-color: rgba(0, 0, 0, 0.709);}
+nav{background: linear-gradient(to left ,black, orange);}
 
 .logo{display: flex;
       padding: auto;
@@ -69,13 +70,15 @@ nav{background-color: rgba(0, 0, 0, 0.709);}
         color: crimson;
       }
 
+      
+
       .productos{display: flex;
                 justify-content: space-around;
               
                 }
 
-      .nav-item{border: 2px solid rgb(182, 168, 9);
-                background-color: rgb(200, 141, 32);
+      .nav-item{border: 2px solid rgba(182, 168, 9, 0.55);
+                background-color: rgba(200, 141, 32, 0.514);
                 color: white;
                 border-radius: 10px;
                 padding: 10px 15px;
@@ -95,6 +98,7 @@ nav{background-color: rgba(0, 0, 0, 0.709);}
       .imgsection2{margin-left: 20%;}
       
       .marcassection2{margin-left: 6%;}
+
       .cafem{margin-left: -6%;}
 
       .section2{height: 55vh;
@@ -235,7 +239,29 @@ nav{background-color: rgba(0, 0, 0, 0.709);}
 
 
       /* --- Animaciones --- */
-                  
+
+      .img_productos{transition-duration: 1s;}
+
+      .img_productos:hover{transform: rotate(15deg);}
+
+      .slogan{animation-name: slogan;
+                   animation-duration: 3s;
+                   animation-iteration-count: infinite;
+                   animation-timing-function: linear;}
+
+      @keyframes slogan {
+
+        0%{transform: rotate(0deg);}
+
+        20%{transform: rotate(2deg);}
+
+        40%{transform: rotate(0deg);}
+
+        60%{transform: rotate(-2deg);}
+
+        100%{transform: rotate(0deg);}
+        
+      }  
               
               
               
