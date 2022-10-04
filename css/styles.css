@@ -126,7 +126,7 @@ nav{background: linear-gradient(to left ,black, orange);}
 
       footer{background-color: rgba(128, 128, 128, 0.264);
              position: relative ;
-             width: 1420px;
+             width: 1430px;
              margin-left: -5px;}
 
                 /* Contacto html */
@@ -148,6 +148,8 @@ nav{background: linear-gradient(to left ,black, orange);}
       .borderform{display: flex;
                   justify-content: center;
                   align-items: center;}
+
+      .icon_footer{color: black;}
 
       /* --- Nosotros ---- */
 
@@ -262,6 +264,8 @@ nav{background: linear-gradient(to left ,black, orange);}
         100%{transform: rotate(0deg);}
         
       }  
+
+
               
               
               
