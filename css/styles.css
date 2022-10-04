@@ -12,7 +12,11 @@ ul{list-style-type: none;
     list-style-type: none;
     font-family: 'Oswald', sans-serif;}
 
-.link_nav{color: black;}
+.link_nav{color: black;
+          text-decoration: none;}
+
+.nav-item{color: black;
+          text-decoration: none;}
 
 .portada{height: 100vh;
   background-image: url(../assets/portada.jpeg);
@@ -70,6 +74,14 @@ nav{background: linear-gradient(to left ,black, orange);}
         color: crimson;
       }
 
+      .img_productos{width: 200px;
+                     height: 200px;}
+
+      .capsula_productos{margin-bottom: -40px;
+                         margin-top: 20px;
+                         margin-left: 40px;
+                         width: 240px;
+                         height: 200px;}
       
 
       .productos{display: flex;
@@ -244,7 +256,12 @@ nav{background: linear-gradient(to left ,black, orange);}
 
       .img_productos{transition-duration: 1s;}
 
-      .img_productos:hover{transform: rotate(15deg);}
+      .img_productos:hover{transform: scale(1.1);}
+
+      .capsula_productos{transition-duration: 1s;}
+
+      .capsula_productos:hover{transform: scale(1.1);}
+
 
       .slogan{animation-name: slogan;
                    animation-duration: 3s;
