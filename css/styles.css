@@ -3,6 +3,8 @@ header{background-color: rgba(128, 128, 128, 0.264);
        width: 1420px;
        margin-left: 5px;}
 
+.tarjeta__title{font-size: 20px;}
+
 .logo{width: 120px;
       height: 120px;
     
@@ -188,6 +190,13 @@ nav{background: linear-gradient(to left ,black, orange);}
     .textosnosotros{gap: 20%;
                     
                     font-family: 'Indie Flower', cursive;}          
+      /* Pago */
+
+    .img_pagos{width: 200px;
+               height: 200px;}
+
+    .img_pagos_macro{height: 200px;
+                     margin-left: 3px;}
 
       /* --- Mobile ---  */
 
@@ -287,6 +296,13 @@ nav{background: linear-gradient(to left ,black, orange);}
 
       .marcas_nosotros:hover{transform: scale(1.1);}
 
+      .img_pagos{transition-duration: 1s;}
+
+      .img_pagos:hover{transform: scale(1.1);}
+
+      .img_pagos_macro{transition-duration: 1s;}
+
+      .img_pagos_macro:hover{transform: scale(1.1);}
 
       .slogan{animation-name: slogan;
                    animation-duration: 3s;
