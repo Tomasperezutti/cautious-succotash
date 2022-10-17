@@ -1,305 +1,965 @@
-header{background-color: rgba(128, 128, 128, 0.264);
-       position: relative ;
-       width: 1420px;
-       margin-left: 5px;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-.logo{width: 120px;
-      height: 120px;
-    
-      margin-left: 46%;}
+.img_productos {
+  transition-duration: 1s;
+}
 
+.img_productos:hover {
+  transform: scale(1.1);
+}
 
-ul{list-style-type: none;
-    display: flex;
-    padding: auto;
-    justify-content: space-around;
-    text-decoration: none;
-    list-style-type: none;
-    font-family: 'Oswald', sans-serif;}
+.capsula_productos {
+  transition-duration: 1s;
+}
 
-.link_nav{color: black;
-          text-decoration: none;}
+.capsula_productos:hover {
+  transform: scale(1.1);
+}
 
-.nav-item{color: black;
-          text-decoration: none;}
+.slogan {
+  animation-name: slogan;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 
-.portada{height: 90vh;
+@keyframes slogan {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(2deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.boton {
+  border: 2px solid crimson;
+  background-color: crimson;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.boton:hover {
+  border: 2px solid crimson;
+  background-color: white;
+  color: crimson;
+}
+
+.tarjeta {
+  border: 2px solid black;
+  width: 300px;
+  height: 350px;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: white;
+  font-family: "Oswald", sans-serif;
+  text-decoration: underline;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prefooter {
+  font-family: "Oswald", sans-serif;
+}
+
+.textoabajo {
+  text-align: center;
+}
+
+footer {
+  background-color: rgba(128, 128, 128, 0.264);
+  position: relative;
+  width: 1430px;
+  margin-left: -5px;
+}
+
+/* Contacto html */
+.title {
+  text-align: center;
+}
+
+.title3 {
+  text-align: center;
+}
+
+form {
+  border: 2px solid black;
+  border-radius: 100px;
+  width: 350px;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+form input {
+  border: solid 2px;
+}
+
+.borderform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_footer {
+  color: black;
+}
+
+form {
+  border: 2px solid black;
+  border-radius: 100px;
+  width: 350px;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+form input {
+  border: solid 2px;
+}
+
+.borderform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_footer {
+  color: black;
+}
+
+.section1 {
+  height: 40vh;
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section2 {
+  height: 43vh;
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+header {
+  background-color: rgba(128, 128, 128, 0.264);
+  position: relative;
+  width: 1420px;
+  margin-left: 5px;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  margin-left: 46%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  padding: auto;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Oswald", sans-serif;
+}
+
+.link_nav {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-item {
+  color: black;
+  text-decoration: none;
+}
+
+.portada {
+  height: 90vh;
   background-image: url(../assets/portada.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.title {
+  text-align: center;
+  font-family: "Bungee Spice", cursive;
+}
+
+.slogan {
+  text-align: center;
+  font-family: "Acme", sans-serif;
+  font-size: 24px;
+}
+
+nav {
+  background: linear-gradient(to left, black, orange);
+}
+
+.img_productos {
+  width: 200px;
+  height: 200px;
+}
+
+.capsula_productos {
+  margin-bottom: -40px;
+  margin-top: 20px;
+  margin-left: 40px;
+  width: 240px;
+  height: 200px;
+}
+
+.productos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imgsection1 {
+  margin-left: 20%;
+  margin-top: -5%;
+  margin-bottom: -5%;
+}
+
+.imgsection2 {
+  width: 150px;
+  margin-left: 20%;
+}
+
+.marcassection2 {
+  margin-left: 6%;
+}
+
+.cafem {
+  width: 283px;
+}
+
+.cafem {
+  margin-left: -6%;
+}
+
+.preguntas {
+  margin-left: 10%;
+  font-family: "Oswald", sans-serif;
+}
+
+.textos {
+  margin-left: 10%;
+  font-family: "Indie Flower", cursive;
+}
+
+.title {
+  text-align: center;
+}
+
+.title3 {
+  text-align: center;
+}
+
+form {
+  border: 2px solid black;
+  border-radius: 100px;
+  width: 350px;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+form input {
+  border: solid 2px;
+}
+
+.borderform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_footer {
+  color: black;
+}
+
+@media (max-width: 375px) {
+  .logo {
+    width: 25%;
+    margin-left: 35%;
   }
-    
-
-    
-
-.title{text-align: center;
-  font-family: 'Bungee Spice', cursive;
+  header {
+    width: 60%;
   }
+  ul {
+    display: flex;
+    padding: 5px 20px;
+    margin-right: 5%;
+  }
+  .nav-item {
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  nav {
+    width: 92%;
+  }
+  .productos {
+    margin-left: 150%;
+    display: flex;
+    gap: 10%;
+    flex-direction: row;
+    width: -100%;
+  }
+  .slider {
+    overflow: auto;
+  }
+  .preguntas {
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+  .section1 {
+    height: 90vh;
+  }
+  .textos {
+    margin-right: 20%;
+    margin-left: 0%;
+  }
+  footer {
+    width: 105%;
+    margin-top: 125%;
+  }
+  .imgsection1 {
+    width: 150px;
+    height: 150px;
+    margin-right: 20%;
+    margin-left: 0%;
+  }
+  .imgsection2 {
+    width: 100px;
+    height: 100px;
+    margin-left: -20%;
+    margin-right: 40%;
+  }
+  .cafem {
+    margin-right: 10%;
+    margin-left: -25%;
+  }
+}
+header {
+  background-color: rgba(128, 128, 128, 0.264);
+  position: relative;
+  width: 1420px;
+  margin-left: 5px;
+}
 
-.slogan{text-align: center;
-    font-family: 'Acme', sans-serif;
-    font-size: 24px;}
+.logo {
+  width: 120px;
+  height: 120px;
+  margin-left: 46%;
+}
 
-nav{background: linear-gradient(to left ,black, orange);}
+ul {
+  list-style-type: none;
+  display: flex;
+  padding: auto;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Oswald", sans-serif;
+}
 
+.link_nav {
+  color: black;
+  text-decoration: none;
+}
 
+.nav-item {
+  color: black;
+  text-decoration: none;
+}
 
-      .tarjeta {
-        border: 2px solid black;
-        width: 300px;
-        height: 350px;
-        border-radius: 20px;
-        padding: 15px;
-        background-color: white;
-        font-family: 'Oswald', sans-serif;
-        text-decoration: underline;
-        
-      
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-      }
-      
-      .boton {
-        border: 2px solid crimson;
-        background-color: crimson;
-        color: white;
-        border-radius: 10px;
-        padding: 10px 15px;
-      }
-      
-      .boton:hover {
-        border: 2px solid crimson;
-        background-color: white;
-        color: crimson;
-      }
+.portada {
+  height: 90vh;
+  background-image: url(../assets/portada.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
-      .img_productos{width: 200px;
-                     height: 200px;}
+.title {
+  text-align: center;
+  font-family: "Bungee Spice", cursive;
+}
 
-      .capsula_productos{margin-bottom: -40px;
-                         margin-top: 20px;
-                         margin-left: 40px;
-                         width: 240px;
-                         height: 200px;}
-      
+.slogan {
+  text-align: center;
+  font-family: "Acme", sans-serif;
+  font-size: 24px;
+}
 
-      .productos{display: flex;
-                justify-content: space-around;
-              
-                }
+nav {
+  background: linear-gradient(to left, black, orange);
+}
 
-      .nav-item{border: 2px solid rgba(182, 168, 9, 0.55);
-                background-color: rgba(200, 141, 32, 0.514);
-                color: white;
-                border-radius: 10px;
-                padding: 10px 15px;
-                }
+.tarjeta {
+  border: 2px solid black;
+  width: 300px;
+  height: 350px;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: white;
+  font-family: "Oswald", sans-serif;
+  text-decoration: underline;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 
-      .section1{height: 40vh;
-                margin-left: 5%;
-        
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                }
+.boton {
+  border: 2px solid crimson;
+  background-color: crimson;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
 
-      .imgsection1{margin-left: 20%;
-                   margin-top: -5%;
-                   margin-bottom: -5%;}
-      
-      .imgsection2{width: 150px;
-        
-                    margin-left: 20%;}
-      
-      .marcassection2{margin-left: 6%;}
+.boton:hover {
+  border: 2px solid crimson;
+  background-color: white;
+  color: crimson;
+}
 
-      .cafem{width: 283px;}
+.img_productos {
+  width: 200px;
+  height: 200px;
+}
 
-      .cafem{margin-left: -6%;}
+.capsula_productos {
+  margin-bottom: -40px;
+  margin-top: 20px;
+  margin-left: 40px;
+  width: 240px;
+  height: 200px;
+}
 
-      .section2{height: 43vh;
-                margin-left: 5%;
-        
-                display: grid;
-                grid-template-columns: 1fr 1fr;}
-      
-      .preguntas{margin-left: 10%;
-        
-                  font-family: 'Oswald', sans-serif;}
-      
-      .textos{margin-left: 10%;
-        
-              font-family: 'Indie Flower', cursive;}   
-                
+.productos {
+  display: flex;
+  justify-content: space-around;
+}
 
-      .prefooter{
-                font-family: 'Oswald', sans-serif;
-                }
+.nav-item {
+  border: 2px solid rgba(182, 168, 9, 0.55);
+  background-color: rgba(200, 141, 32, 0.514);
+  color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
 
-      .textoabajo{text-align: center;
-                 
-                  }
+.section1 {
+  height: 40vh;
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
-      footer{background-color: rgba(128, 128, 128, 0.264);
-             position: relative ;
-             width: 1430px;
-             margin-left: -5px;}
+.imgsection1 {
+  margin-left: 20%;
+  margin-top: -5%;
+  margin-bottom: -5%;
+}
 
-                /* Contacto html */
-      .title{text-align: center;}
+.imgsection2 {
+  width: 150px;
+  margin-left: 20%;
+}
 
-      .title3{text-align: center;}
+.marcassection2 {
+  margin-left: 6%;
+}
 
-      form{ border: 2px solid black;
-            border-radius: 100px;
-            width: 350px;
-            align-items: center;
-            display: flex ;
-            flex-flow: column;
-            justify-content: center;
-          }
+.cafem {
+  width: 283px;
+}
 
-      form input{border: solid 2px;}
+.cafem {
+  margin-left: -6%;
+}
 
-      .borderform{display: flex;
-                  justify-content: center;
-                  align-items: center;}
+.section2 {
+  height: 43vh;
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
-      .icon_footer{color: black;}
+.preguntas {
+  margin-left: 10%;
+  font-family: "Oswald", sans-serif;
+}
 
-      /* --- Nosotros ---- */
+.textos {
+  margin-left: 10%;
+  font-family: "Indie Flower", cursive;
+}
 
+.prefooter {
+  font-family: "Oswald", sans-serif;
+}
 
-    .seccion1{display: flex;
-              justify-content: space-around;
-              }
+.textoabajo {
+  text-align: center;
+}
 
-    .h2nosotros{display: flex;
-                text-align: start;
-                margin-left: 70px;}
+footer {
+  background-color: rgba(128, 128, 128, 0.264);
+  position: relative;
+  width: 1430px;
+  margin-left: -5px;
+}
 
-    .foto_nosotros{ margin-top: -13%;
-                    margin-right: 1%;
-                    float: left;}
+/* Contacto html */
+.title {
+  text-align: center;
+}
 
-    .textosnosotros{gap: 20%;
-                    
-                    font-family: 'Indie Flower', cursive;}          
+.title3 {
+  text-align: center;
+}
 
-      /* --- Mobile ---  */
+form {
+  border: 2px solid black;
+  border-radius: 100px;
+  width: 350px;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
 
-      @media (max-width: 375px) {
+form input {
+  border: solid 2px;
+}
 
-             .logo{width: 25%;
-                   margin-left: 35%;}  
-              header{width: 60% ;}
-              
-              ul{display: flex;
-                     
-                     padding: 5px 20px ;
-                     margin-right: 5%; }
-              
-              .nav-item{border-radius: 5px;
-                        padding: 5px 10px;}
+.borderform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-               nav{width: 92%;}          
-                      
-              .productos{margin-left: 150%;
-                         display: flex;
-                         gap: 10%;
-                         flex-direction: row;
-                         width: -100%;}
-                        
-              .slider{overflow: auto;}
+.icon_footer {
+  color: black;
+}
 
-              .preguntas{margin-right: 0%;
-                         margin-left: 0%;}
-                        
-              
-              .section1{height: 90vh;
-                        ;}
-                      
-              .textos{margin-right: 20%;
-                      margin-left: 0%;}  
-            
-               footer{width: 105%;
-                    margin-top: 125%;}
-                  
-                .imgsection1{width: 150px;
-                             height: 150px;
-                            margin-right: 20%;
-                            margin-left: 0%;}
-                          
-                .imgsection2{width: 100px;
-                             height: 100px;
-                             margin-left: -20%;
-                             margin-right: 40%;
-                             }
+@media (max-width: 375px) {
+  header {
+    width: 110%;
+  }
+  ul {
+    display: flex;
+    padding: 5px 20px;
+    margin-right: 5%;
+  }
+  .footer_nosotros {
+    width: 105%;
+    margin-top: 15%;
+  }
+  .foto_nosotros {
+    width: 150px;
+    height: 150px;
+  }
+}
+.seccion1 {
+  display: flex;
+  justify-content: space-around;
+}
 
-                .cafem{margin-right: 10%;
-                       margin-left: -25%;}
-                      
-                }
+.h2nosotros {
+  display: flex;
+  text-align: start;
+  margin-left: 70px;
+}
 
-        /* --- Nosotros Mobile --- */
+.foto_nosotros {
+  margin-top: -13%;
+  margin-right: 1%;
+  float: left;
+}
 
-        @media (max-width: 375px) {
+.textosnosotros {
+  gap: 20%;
+  font-family: "Indie Flower", cursive;
+}
 
-              
-          header{width: 110% ;}
-          
-          ul{display: flex;
-                 
-                 padding: 5px 20px ;
-                 margin-right: 5%; }
-                
-          .footer_nosotros{width: 105%;
-           margin-top: 15%;
-           }
-          
-          .foto_nosotros{width: 150px;
-                         height: 150px;}}
+header {
+  background-color: rgba(128, 128, 128, 0.264);
+  position: relative;
+  width: 1420px;
+  margin-left: 5px;
+}
 
+.logo {
+  width: 120px;
+  height: 120px;
+  margin-left: 46%;
+}
 
+ul {
+  list-style-type: none;
+  display: flex;
+  padding: auto;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Oswald", sans-serif;
+}
 
+.link_nav {
+  color: black;
+  text-decoration: none;
+}
 
-      /* --- Animaciones --- */
+.nav-item {
+  color: black;
+  text-decoration: none;
+}
 
-      .img_productos{transition-duration: 1s;}
+.portada {
+  height: 90vh;
+  background-image: url(../assets/portada.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
-      .img_productos:hover{transform: scale(1.1);}
+.title {
+  text-align: center;
+  font-family: "Bungee Spice", cursive;
+}
 
-      .capsula_productos{transition-duration: 1s;}
+.slogan {
+  text-align: center;
+  font-family: "Acme", sans-serif;
+  font-size: 24px;
+}
 
-      .capsula_productos:hover{transform: scale(1.1);}
+nav {
+  background: linear-gradient(to left, black, orange);
+}
 
+.tarjeta {
+  border: 2px solid black;
+  width: 300px;
+  height: 350px;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: white;
+  font-family: "Oswald", sans-serif;
+  text-decoration: underline;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 
-      .slogan{animation-name: slogan;
-                   animation-duration: 3s;
-                   animation-iteration-count: infinite;
-                   animation-timing-function: linear;}
+.boton {
+  border: 2px solid crimson;
+  background-color: crimson;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
 
-      @keyframes slogan {
+.boton:hover {
+  border: 2px solid crimson;
+  background-color: white;
+  color: crimson;
+}
 
-        0%{transform: rotate(0deg);}
+.img_productos {
+  width: 200px;
+  height: 200px;
+}
 
-        20%{transform: rotate(2deg);}
+.capsula_productos {
+  margin-bottom: -40px;
+  margin-top: 20px;
+  margin-left: 40px;
+  width: 240px;
+  height: 200px;
+}
 
-        40%{transform: rotate(0deg);}
+.productos {
+  display: flex;
+  justify-content: space-around;
+}
 
-        60%{transform: rotate(-2deg);}
+.nav-item {
+  border: 2px solid rgba(182, 168, 9, 0.55);
+  background-color: rgba(200, 141, 32, 0.514);
+  color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
 
-        100%{transform: rotate(0deg);}
-        
-      }  
+.section1 {
+  height: 40vh;
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
+.imgsection1 {
+  margin-left: 20%;
+  margin-top: -5%;
+  margin-bottom: -5%;
+}
 
-              
-              
-              
-              
+.imgsection2 {
+  width: 150px;
+  margin-left: 20%;
+}
 
-              
+.marcassection2 {
+  margin-left: 6%;
+}
+
+.cafem {
+  width: 283px;
+}
+
+.cafem {
+  margin-left: -6%;
+}
+
+.section2 {
+  height: 43vh;
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.preguntas {
+  margin-left: 10%;
+  font-family: "Oswald", sans-serif;
+}
+
+.textos {
+  margin-left: 10%;
+  font-family: "Indie Flower", cursive;
+}
+
+.prefooter {
+  font-family: "Oswald", sans-serif;
+}
+
+.textoabajo {
+  text-align: center;
+}
+
+footer {
+  background-color: rgba(128, 128, 128, 0.264);
+  position: relative;
+  width: 1430px;
+  margin-left: -5px;
+}
+
+/* Contacto html */
+.title {
+  text-align: center;
+}
+
+.title3 {
+  text-align: center;
+}
+
+form {
+  border: 2px solid black;
+  border-radius: 100px;
+  width: 350px;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+form input {
+  border: solid 2px;
+}
+
+.borderform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_footer {
+  color: black;
+}
+
+/* --- Nosotros ---- */
+.seccion1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.h2nosotros {
+  display: flex;
+  text-align: start;
+  margin-left: 70px;
+}
+
+.foto_nosotros {
+  margin-top: -13%;
+  margin-right: 1%;
+  float: left;
+}
+
+.textosnosotros {
+  gap: 20%;
+  font-family: "Indie Flower", cursive;
+}
+
+/* --- Mobile ---  */
+@media (max-width: 375px) {
+  .logo {
+    width: 25%;
+    margin-left: 35%;
+  }
+  header {
+    width: 60%;
+  }
+  ul {
+    display: flex;
+    padding: 5px 20px;
+    margin-right: 5%;
+  }
+  .nav-item {
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  nav {
+    width: 92%;
+  }
+  .productos {
+    margin-left: 150%;
+    display: flex;
+    gap: 10%;
+    flex-direction: row;
+    width: -100%;
+  }
+  .slider {
+    overflow: auto;
+  }
+  .preguntas {
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+  .section1 {
+    height: 90vh;
+  }
+  .textos {
+    margin-right: 20%;
+    margin-left: 0%;
+  }
+  footer {
+    width: 105%;
+    margin-top: 125%;
+  }
+  .imgsection1 {
+    width: 150px;
+    height: 150px;
+    margin-right: 20%;
+    margin-left: 0%;
+  }
+  .imgsection2 {
+    width: 100px;
+    height: 100px;
+    margin-left: -20%;
+    margin-right: 40%;
+  }
+  .cafem {
+    margin-right: 10%;
+    margin-left: -25%;
+  }
+}
+/* --- Nosotros Mobile --- */
+@media (max-width: 375px) {
+  header {
+    width: 110%;
+  }
+  ul {
+    display: flex;
+    padding: 5px 20px;
+    margin-right: 5%;
+  }
+  .footer_nosotros {
+    width: 105%;
+    margin-top: 15%;
+  }
+  .foto_nosotros {
+    width: 150px;
+    height: 150px;
+  }
+}
+/* --- Animaciones --- */
+.img_productos {
+  transition-duration: 1s;
+}
+
+.img_productos:hover {
+  transform: scale(1.1);
+}
+
+.capsula_productos {
+  transition-duration: 1s;
+}
+
+.capsula_productos:hover {
+  transform: scale(1.1);
+}
+
+.slogan {
+  animation-name: slogan;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes slogan {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(2deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

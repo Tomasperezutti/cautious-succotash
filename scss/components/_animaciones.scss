@@ -1,0 +1,27 @@
+.img_productos{transition-duration: 1s;}
+
+.img_productos:hover{transform: scale(1.1);}
+
+.capsula_productos{transition-duration: 1s;}
+
+.capsula_productos:hover{transform: scale(1.1);}
+
+
+.slogan{animation-name: slogan;
+             animation-duration: 3s;
+             animation-iteration-count: infinite;
+             animation-timing-function: linear;}
+
+@keyframes slogan {
+
+  0%{transform: rotate(0deg);}
+
+  20%{transform: rotate(2deg);}
+
+  40%{transform: rotate(0deg);}
+
+  60%{transform: rotate(-2deg);}
+
+  100%{transform: rotate(0deg);}
+  
+} 

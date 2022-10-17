@@ -1,0 +1,20 @@
+.title{text-align: center;}
+
+.title3{text-align: center;}
+
+form{ border: 2px solid black;
+      border-radius: 100px;
+      width: 350px;
+      align-items: center;
+      display: flex ;
+      flex-flow: column;
+      justify-content: center;
+    }
+
+form input{border: solid 2px;}
+
+.borderform{display: flex;
+            justify-content: center;
+            align-items: center;}
+
+.icon_footer{color: black;}

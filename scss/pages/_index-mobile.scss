@@ -1,0 +1,52 @@
+@media (max-width: 375px) {
+
+    .logo{width: 25%;
+          margin-left: 35%;}  
+     header{width: 60% ;}
+     
+     ul{display: flex;
+            
+            padding: 5px 20px ;
+            margin-right: 5%; }
+     
+     .nav-item{border-radius: 5px;
+               padding: 5px 10px;}
+
+      nav{width: 92%;}          
+             
+     .productos{margin-left: 150%;
+                display: flex;
+                gap: 10%;
+                flex-direction: row;
+                width: -100%;}
+               
+     .slider{overflow: auto;}
+
+     .preguntas{margin-right: 0%;
+                margin-left: 0%;}
+               
+     
+     .section1{height: 90vh;
+               ;}
+             
+     .textos{margin-right: 20%;
+             margin-left: 0%;}  
+   
+      footer{width: 105%;
+           margin-top: 125%;}
+         
+       .imgsection1{width: 150px;
+                    height: 150px;
+                   margin-right: 20%;
+                   margin-left: 0%;}
+                 
+       .imgsection2{width: 100px;
+                    height: 100px;
+                    margin-left: -20%;
+                    margin-right: 40%;
+                    }
+
+       .cafem{margin-right: 10%;
+              margin-left: -25%;}
+             
+       }

@@ -1,0 +1,45 @@
+header{background-color: rgba(128, 128, 128, 0.264);
+    position: relative ;
+    width: 1420px;
+    margin-left: 5px;}
+
+.logo{width: 120px;
+   height: 120px;
+ 
+   margin-left: 46%;}
+
+
+ul{list-style-type: none;
+ display: flex;
+ padding: auto;
+ justify-content: space-around;
+ text-decoration: none;
+ list-style-type: none;
+ font-family: 'Oswald', sans-serif;}
+
+.link_nav{color: black;
+       text-decoration: none;}
+
+.nav-item{color: black;
+       text-decoration: none;}
+
+.portada{height: 90vh;
+background-image: url(../assets/portada.jpeg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+}
+ 
+
+ 
+
+.title{text-align: center;
+font-family: 'Bungee Spice', cursive;
+}
+
+.slogan{text-align: center;
+ font-family: 'Acme', sans-serif;
+ font-size: 24px;}
+
+nav{background: linear-gradient(to left ,black, orange);}
